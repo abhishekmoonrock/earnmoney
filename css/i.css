@@ -1,0 +1,329 @@
+
+html {
+  scroll-behavior: smooth;
+cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"), pointer;
+}
+.alert-success{
+  background-color: #00FF7F;
+} 
+a {
+  text-decoration: none;
+  text-decoration-style: none;
+ }
+/*back to top button*/
+
+ #button {
+  display: inline-block;
+  background-color: #7FFF00;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color:  #1a8cff;/*#333*/
+  text-decoration-line: none;
+}
+#button:active {
+  background-color: #555;
+  text-decoration-line: none;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+  text-decoration-line: none;
+}
+/*back to top button*/
+
+  /* Remove the navbar's default margin-bottom and rounded borders 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    end remove this to work*/ 
+
+
+
+.dark-mode {
+  background: linear-gradient(to right, #004d1a 0%, #0e0e3f 100%) no-repeat center center fixed;
+  color: #00ff00;
+}
+
+
+body
+   {
+font-family: 'Baloo Thambi' !important;
+background: linear-gradient(to right, #21e75b 0%, #1a40cb 100%) no-repeat center center fixed;
+}
+/* start center side  #7B68EE   background color */
+#centerside{
+ background: linear-gradient(to right, #21e75b 0%, #1a40cb 100%) no-repeat center center fixed;
+}
+/* end center side background color */
+/* start right side background color #20B2AA  */
+#rightside {
+ background: linear-gradient(-45deg, #32cd32, #8cff1a, #1a75ff, #003d99);
+  background-size: 900% 900%;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* start right side background color */
+.example {
+  
+  color: black;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+ 
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: #00FF00;}
+}
+
+#i {
+  
+  display: inline-block;
+  animation: spin 1s infinite linear;
+ 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes twist-up {
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+
+
+button {
+  color: white;
+  background-color: #00008b;
+  border-style: none;
+ }
+
+
+
+#link {
+    display:block;
+color:white;
+text-decoration: none;
+}
+
+#link:hover {
+  background-color: blue;
+}
+
+
+
+
+.popover-title {
+   
+    background-color: #0040ff;
+}
+
+
+
+.digital-clock {
+  
+ 
+
+  border-radius: 2px;
+  text-align: center;
+  
+  
+}
+
+
+
+  #leftside {
+    background:linear-gradient(-266deg,#1619e7,#23c9ef,#c113d4,#2334d5);
+  
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+  border-style: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: dodgerblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+ /* Styling the heading */
+    #testyy {
+        font-size: 36px;
+        color: #333;
+        overflow: hidden; /* Ensures text doesn't overflow */
+        white-space: nowrap; /* Prevents text from wrapping */
+        border-right: 2px solid; /* Simulates the typing cursor */
+        animation: typewriter 3s steps(7) infinite alternate; /* Animation effect */
+    }
+
+    /* Animation effect */
+    @keyframes typewriter {
+        from {
+            width: 0; /* Starts from width 0 */
+        }
+        to {
+            width: 20%; /* Ends at full width */
+        }
+    }
+
+
+
+
+
